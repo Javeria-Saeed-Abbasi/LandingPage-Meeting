@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Javeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!----Main Stylesheet--->
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<!----Google Fonts--->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!---0-Online Link Bootstrap Css--->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image:url(images/BG2.jpg)}
+.bgimg2 {background-image:url(images/invite1.jpg)}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Spark Organization</h1>
+    <h2>Meeting On</h2>
+    <h2><b>25.02.2019</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Spark Organization</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Meeting</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Registeration</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Spark Organization</b></h1>
+    <img class="w3-round w3-grayscale-min" src="images/1.jpg" style="width:100%;margin:32px 0">
+    <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Meeting Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">You Are Invited</h1><br>
+    <h2>Are You Coming..</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>THE MEETING</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="images/meeting room 3.jpg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Meeting Starts at - 2:00pm</p>
+        <p>Lunch - 5:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>Meeting - 907 Roosevelt Ave York, PA 17404 - 717.825.3488</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>HOPE YOU WILL COME AND JOIN US!</h1>
+  <p class="w3-large">Kindly Respond By Feburary, 2019</p>
+  <p class="w3-xlarge">
+    <button onClick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Registration</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can come and join us.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Your Name" name="name"><br/>
+		<input class="w3-input w3-border" type="email" placeholder="Your Email" name="email"><br/>
+		<input class="w3-input w3-border" type="text" placeholder="Your Company Name" name="comp-name">
+
+
+      </form>
+      <p><i>From, Your Good Partner Spark Organiaztion,</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onClick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Coming</button>
+        </div>
+        <div class="w3-half">
+          <button onClick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Copright @ reserved by Javeria</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
